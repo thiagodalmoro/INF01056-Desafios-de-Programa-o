@@ -1,16 +1,6 @@
 #
 #
 # Author: Thiago Dal Moro
-#
-
-import math
-import  numpy
-
-
-#dict
-
-
-
 
 # def main ():
     #N number os trips

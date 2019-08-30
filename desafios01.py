@@ -7,22 +7,55 @@ import math
 import  numpy
 
 
-M = {
-    "key",
-    "value",
-    "quantity"
-}
+#dict
 
 
-def main ():
+
+
+# def main ():
     #N number os trips
-    N = int(input("Enter number of Trips GotoMarket: "))
-    print  (N)
+# N = int(input("Enter number of Trips GotoMarket: "))
+N = int(input())
+# print  (N)
+
+for j in range (N):
+    M = {}
+
+    # N_product = int(input("Enter number of procuts: "))
+    N_product = int(input())
+    # print  (N_product)
+
+    for i in range(N_product):
+        prt = (input()).split()
+        vlr = float(prt[-1])
+        name = prt[:-1]
+        name = " ".join(name)
+
+        #add dict
+        M[name]= vlr
+
+        # print(name, vlr)
+
+    # print (M)
 
 
-    M.quantity=int(input("Enter number of quantity list disponible products: "))
-    print   (M.quantity)
+    # N_buy = int(input("Enter number of itens: "))
+    N_buy = int(input())
+    # print  (N_buy)
 
+    valort = 0
 
-    #
-    # for x in
+#compra aqui
+
+    for i in range(N_buy):
+        prt = (input()).split()
+        quant = int(prt[-1])
+        name = prt[:-1]
+        name = " ".join(name)
+
+#acumula para calcular o valor
+
+        if name in M.keys():
+            valort+= M[name]*quant
+
+    print ("R$ {:.2f}".format(valort))

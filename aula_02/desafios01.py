@@ -9,6 +9,7 @@ N = int(input())
 # print  (N)
 
 for j in range (N):
+    #dicionario 
     M = {}
 
     # N_product = int(input("Enter number of procuts: "))
